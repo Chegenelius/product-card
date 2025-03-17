@@ -1,0 +1,161 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c2aeae;
+  }
+  
+  .container {
+    width: 90%; 
+    max-width: 1200px; 
+    background-color: rgb(231, 213, 213);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .perfume-card {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image img {
+    max-width: 250px; 
+    height: auto;
+    border-radius: 10px;
+  }
+  .description {
+    margin-left: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .description h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+  }
+  .price-row{
+    display: flex;
+    flex-direction: row;
+  }
+  .price {
+    font-size: 24px;
+    color: green;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .description .original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  button {
+    background-color: #2b7a0b;
+    color: white;
+    width: 200px;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  button img {
+    margin-right: 8px;
+  }
+  
+  button:hover {
+    background-color: #1d5a09;
+  }
+  
+  /* Tablet and small screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 95%; 
+    }
+  
+    .perfume-card {
+      flex-direction: column; 
+      text-align: center;
+    }
+  
+    .image img {
+      max-width: 200px; 
+    }
+  
+    .description {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .price {
+      font-size: 18px; 
+    }
+  
+    .description h2 {
+      font-size: 20px; 
+    }
+  
+    .original-price {
+      font-size: 16px; 
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  /* Mobile phones */
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 100%; 
+      padding: 15px; 
+    }
+  
+    .perfume-card {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .image img {
+      max-width: 180px; 
+    }
+  
+    .description h2 {
+      font-size: 18px;
+    }
+  
+    .price {
+      font-size: 16px; 
+    }
+  
+    .original-price {
+      font-size: 14px; 
+    }
+  
+    button {
+      width: 100%; 
+      padding: 10px 0; 
+    }
+  }
+  
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
